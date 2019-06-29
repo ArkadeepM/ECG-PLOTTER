@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxWidth="1000dp"
+    android:minWidth="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ECG_PLOT"
+    tools:showIn="@layout/activity_ecg__plot">
+
+
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:id="@+id/b1"
+        android:text="SEND FILE"
+
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/b2"
+        android:text="PLOT"
+        android:layout_toRightOf="@id/b2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginTop="70dp"
+        android:id="@+id/graph1" />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@+id/graph1">
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:id="@+id/f1"
+        android:text="Fantasia"
+        android:layout_marginTop="5dp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:id="@+id/f2"
+        android:text="mitdb/100"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/f1"
+        android:onClick="onClick"/>
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:id="@+id/f3"
+        android:text="CLEAR PLOT"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/f2"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
+
+</RelativeLayout>
